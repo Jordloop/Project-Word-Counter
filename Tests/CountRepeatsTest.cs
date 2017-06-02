@@ -28,7 +28,21 @@ namespace WordCounter
       //ARRANGE
       int expectedResult = 1;
       string testWord = "Foo";
-      string testSentence = "foo";
+      string testSentence = "fOO";
+      RepeatCounter newCount = new RepeatCounter(testWord, testSentence);
+      //ACT
+      int result = newCount.CountRepeats(testWord, testSentence);
+      //ASSERT
+      Assert.Equal(expectedResult, result);
+    }
+
+    [Fact]
+    public void CountRepeats_FindEqualityInMultiWordString_True()
+    {
+      //ARRANGE
+      int expectedResult = 1;
+      string testWord = "Foo";
+      string testSentence = "The word foo is not the word food.";
       RepeatCounter newCount = new RepeatCounter(testWord, testSentence);
       //ACT
       int result = newCount.CountRepeats(testWord, testSentence);
