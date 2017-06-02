@@ -20,15 +20,20 @@ namespace WordCounter.Objects
       int result = 0;
       string userWordToLower = userWord.ToLower();
       string userSentenceToLower = userSentence.ToLower();
+      string[] userSentenceToArray = userWordToLower.Split(' ');
 
-      if (userWordToLower == userSentenceToLower)
+      for (int i = 0; i < userSentenceToArray.Length; i++)
       {
-        result += 1;
+        if (userWordToLower == userSentenceToArray[i])
+        {
+          result += 1;
+        }
+        else
+        {
+          result += 0;
+        }
       }
-      else
-      {
-        result += 0;
-      }
+
       return result;
     }
   }
