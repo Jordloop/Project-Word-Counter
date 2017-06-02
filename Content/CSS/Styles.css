@@ -37,4 +37,13 @@ span {
 .navbar {
   border: none;
   background-color: #F4F4F4;
+  margin-left: -1%;
+}
+
+#heading-color1 {
+  color: #E37222
+}
+
+#heading-color2 {
+  color: #5bc0de
 }
