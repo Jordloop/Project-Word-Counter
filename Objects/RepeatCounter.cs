@@ -20,21 +20,22 @@ namespace WordCounter.Objects
       int result = 0;
       string userWordToLower = userWord.ToLower();
       string userSentenceToLower = userSentence.ToLower();
-      string[] userSentenceToArray = userWordToLower.Split(' ');
+      string[] userSentenceToArray = userSentenceToLower.Split(' ');
 
       for (int i = 0; i < userSentenceToArray.Length; i++)
       {
+        Console.WriteLine(userWordToLower + ": " + userSentenceToArray[i]);
         if (userWordToLower == userSentenceToArray[i])
         {
-          result += 1;
+          result ++;
         }
         else
         {
           result += 0;
         }
       }
-
       return result;
     }
+
   }
 }

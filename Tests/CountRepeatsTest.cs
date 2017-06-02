@@ -41,7 +41,7 @@ namespace WordCounter
     {
       //ARRANGE
       int expectedResult = 1;
-      string testWord = "Foo";
+      string testWord = "foo";
       string testSentence = "The word foo is not the word food.";
       RepeatCounter newCount = new RepeatCounter(testWord, testSentence);
       //ACT
