@@ -15,15 +15,16 @@ namespace WordCounter.Objects
       _userSentence = sentence;
     }
 
+//  LOOKS THROUGH userSentence FOR userWord RETURNS NUMBER OF TIMES IT IS PRESENT.
     public int CountRepeats(string userWord, string userSentence)
     {
       //LOCAL VARIABLES
       string tempString;
       int result = 0;
+      char[] charToTrim = {'!', '.', '?', ',', ';', ':'};
       string userWordToLower = userWord.ToLower();
       string userSentenceToLower = userSentence.ToLower();
       string[] userSentenceToArray = userSentenceToLower.Split(' ');
-      char[] charToTrim = {'!', '.', '?', ',', ';', ':'};
 
       for (int i = 0; i < userSentenceToArray.Length; i++)
       {

@@ -1,0 +1,18 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+ <form class="form-horizontal" action="/result" method="post">
+   <div class="form-group">
+     <label class="col-md-2" for="userWord">Word: </label>
+     <div class="col-md-6">
+     <input class="form-control" name="userWord" type="text">
+     </div>
+   </div>
+   <div class="form-group">
+     <label class="col-md-2" for="userSentence">Sentence: </label>
+     <div class="col-md-6">
+     <input class="form-control" name="userSentence" type="text">
+     </div>
+   </div>
+   <button class="btn btn-info" type="submit" name="button">Score my word!</button>
+ </form>

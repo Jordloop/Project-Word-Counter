@@ -7,7 +7,7 @@ namespace WordCounter
 {
   public class CountRepeatsTest
   {
-
+// TEST FOR SPEC 1
     [Fact]
     public void CountRepeats_CheckEqualityCaseSensitive_True()
     {
@@ -21,7 +21,7 @@ namespace WordCounter
       //ASSERT
       Assert.Equal(expectedResult, result);
     }
-
+// TEST FOR SPEC 2
     [Fact]
     public void CountRepeats_CheckEqualityNotCaseSensitive_True()
     {
@@ -35,7 +35,7 @@ namespace WordCounter
       //ASSERT
       Assert.Equal(expectedResult, result);
     }
-
+// TEST FOR SPEC 3
     [Fact]
     public void CountRepeats_FindEqualityInMultiWordString_True()
     {
@@ -49,7 +49,7 @@ namespace WordCounter
       //ASSERT
       Assert.Equal(expectedResult, result);
     }
-
+// TEST FOR SPEC 4
     [Fact]
     public void CountRepeats_FindEqualityWithPunctuation_True()
     {
@@ -63,7 +63,7 @@ namespace WordCounter
       //ASSERT
       Assert.Equal(expectedResult, result);
     }
-
+// TEST FOR SPEC 5
     [Fact]
     public void CountRepeats_FindEachEqualityInMultiWordString_True()
     {
