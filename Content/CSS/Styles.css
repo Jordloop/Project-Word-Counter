@@ -1,6 +1,6 @@
 body {
 font-family: 'Oswald', sans-serif;
-background-color: #C0B283;
+background-color: #EEAA7B;
 height: 100%;
 }
 
@@ -25,7 +25,16 @@ span {
   height: 100%;
 }
 
-.jumbotron {
-  background-color: #DCD0C0;
-  width: 100%;
+.page-header {
+  height: 15%;
+  margin-bottom: 0%;
+}
+
+#dynamic-content {
+  margin-top: 5%;
+}
+
+.navbar {
+  border: none;
+  background-color: #F4F4F4;
 }
