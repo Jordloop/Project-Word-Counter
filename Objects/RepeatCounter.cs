@@ -38,7 +38,7 @@ namespace WordCounter.Objects
       return _wordCount;
     }
 
-//  LOOKS THROUGH userSentence FOR userWord RETURNS NUMBER OF TIMES IT IS PRESENT.
+//  THIS METHOD LOOKS THROUGH userSentence FOR userWord RETURNS NUMBER OF TIMES IT IS PRESENT.
     public int CountRepeats(string userWord, string userSentence)
     {
       //LOCAL VARIABLES

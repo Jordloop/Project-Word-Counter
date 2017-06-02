@@ -1,0 +1,31 @@
+body {
+font-family: 'Oswald', sans-serif;
+background-color: #C0B283;
+height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+label, p {
+  font-size: 18pt;
+}
+
+span {
+  color: #E37222;
+}
+
+.container {
+  background-color: #F4F4F4;
+  height: 100%;
+}
+
+.jumbotron {
+  background-color: #DCD0C0;
+  width: 100%;
+}
