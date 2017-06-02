@@ -18,15 +18,17 @@ namespace WordCounter.Objects
     public int CountRepeats(string userWord, string userSentence)
     {
       //LOCAL VARIABLES
+      string tempString;
       int result = 0;
-
       string userWordToLower = userWord.ToLower();
       string userSentenceToLower = userSentence.ToLower();
       string[] userSentenceToArray = userSentenceToLower.Split(' ');
+      char[] charToTrim = {'!', '.', '?', ',', ';', ':'};
 
       for (int i = 0; i < userSentenceToArray.Length; i++)
       {
-        if (userWordToLower == userSentenceToArray[i])
+        tempString = userSentenceToArray[i].Trim(charToTrim);
+        if (userWordToLower == tempString)
         {
           result ++;
         }
