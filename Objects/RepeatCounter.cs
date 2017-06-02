@@ -18,8 +18,10 @@ namespace WordCounter.Objects
     public int CountRepeats(string userWord, string userSentence)
     {
       int result = 0;
+      string userWordToLower = userWord.ToLower();
+      string userSentenceToLower = userSentence.ToLower();
 
-      if (userWord == userSentence)
+      if (userWordToLower == userSentenceToLower)
       {
         result += 1;
       }
