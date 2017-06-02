@@ -49,6 +49,19 @@ namespace WordCounter
       //ASSERT
       Assert.Equal(expectedResult, result);
     }
+    [Fact]
+    public void CountRepeats_FindEqualityInMultiWordStringWithPunctuation_True()
+    {
+      //ARRANGE
+      int expectedResult = 1;
+      string testWord = "foo";
+      string testSentence = "Why do I keep typing foo?";
+      RepeatCounter newCount = new RepeatCounter(testWord, testSentence);
+      //ACT
+      int result = newCount.CountRepeats(testWord, testSentence);
+      //ASSERT
+      Assert.Equal(expectedResult, result);
+    }
 
   }
 }
