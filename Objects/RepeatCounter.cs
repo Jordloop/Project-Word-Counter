@@ -17,8 +17,17 @@ namespace WordCounter.Objects
 
     public int CountRepeats(string userWord, string userSentence)
     {
+      int result = 0;
 
-      return 0;
+      if (userWord == userSentence)
+      {
+        result += 1;
+      }
+      else
+      {
+        result += 0;
+      }
+      return result;
     }
   }
 }

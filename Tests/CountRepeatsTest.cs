@@ -7,6 +7,7 @@ namespace WordCounter
 {
   public class CountRepeatsTest
   {
+
     [Fact]
     public void CheckEquality_CountRepeats()
     {
@@ -20,5 +21,6 @@ namespace WordCounter
       //ASSERT
       Assert.Equal(expectedResult, result);
     }
+    
   }
 }
