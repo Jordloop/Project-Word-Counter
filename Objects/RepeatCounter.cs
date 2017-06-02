@@ -9,7 +9,7 @@ namespace WordCounter.Objects
     private string _userWord;
     private string _userSentence;
     private int _wordCount ;
-
+//CLASS CONSTRUCTOR
     public RepeatCounter(string word, string sentence)
     {
       _userWord = word;
@@ -38,17 +38,18 @@ namespace WordCounter.Objects
       return _wordCount;
     }
 
-//  THIS METHOD LOOKS THROUGH userSentence FOR userWord RETURNS NUMBER OF TIMES IT IS PRESENT.
+//  THIS METHOD LOOPS THROUGH userSentence SEARCHINBG FOR userWord THEN RETURNS NUMBER OF TIMES userWord IS PRESENT IN userSentence.
     public int CountRepeats(string userWord, string userSentence)
     {
-      //LOCAL VARIABLES
+      //  LOCAL VARIABLES
       string tempString;
       int result = 0;
-      char[] charToTrim = {'!', '.', '?', ',', ';', ':'};
-      string userWordToLower = userWord.ToLower();
-      string userSentenceToLower = userSentence.ToLower();
-      string[] userSentenceToArray = userSentenceToLower.Split(' ');
+      char[] charToTrim = {'!', '.', '?', ',', ';', ':'}; //  CHARACTERS THAT I DO NOT WANT TO BE PRESENT WHEN CHECKING EQUALITY.
+      string userWordToLower = userWord.ToLower(); // CONVERTS userWord TO LOWER CASE.
+      string userSentenceToLower = userSentence.ToLower(); // CONVERTS userSentence TO LOWER CASE.
+      string[] userSentenceToArray = userSentenceToLower.Split(' ');  // CREATES AN ARRAY WHERE EACH (STRING)ELEMENT IS A SINGLE WORD FROM userSentence.
 
+      //  LOGIC
       for (int i = 0; i < userSentenceToArray.Length; i++)
       {
         tempString = userSentenceToArray[i].Trim(charToTrim);

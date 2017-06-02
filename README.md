@@ -1,3 +1,37 @@
+# Word Counter
+
+
+#### By Jordan Loop; Date of current version: 6/2/2017
+
+## Description
+
+#### The user enters a single word and a sentence. The program will count how many times the single word is used in the sentence.
+
+## Setup/Installation Requirements
+
+* Download repository
+* Using Windows PowerShell, Navigate to top level directory.
+* In power shell type "dnx kestrel" (without the quotation marks).
+* Open preferred web browser and type in the following URL: http://localhost:5004/
+
+## Known Bugs
+
+No know bugs.
+
+## Questions/Concerns or advice?
+
+Contact me at jordanloop@gmail.com
+
+## Technologies Used
+
+* ASP.NET 5
+* C#
+* HTML
+
+### License
+
+None.
+
 ## Specifications
 | Behavior                                                                                                                                                             | Input (User Action/Selection)                                                                                       | Output (Program Action) | Why this behavior                                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|-------------------------|----------------------------------------------------------------------------|
