@@ -8,11 +8,34 @@ namespace WordCounter.Objects
   {
     private string _userWord;
     private string _userSentence;
+    private int _wordCount ;
 
     public RepeatCounter(string word, string sentence)
     {
       _userWord = word;
       _userSentence = sentence;
+      _wordCount = 0;
+    }
+//  CLASS SETTER
+    public void SetWordCount(int newWordCount)
+    {
+      _wordCount = newWordCount;
+    }
+
+// CLASS GETTERS
+    public string GetUserWord()
+    {
+      return _userWord;
+    }
+
+    public string GetUserSentence()
+    {
+      return _userSentence;
+    }
+
+    public int GetWordCount()
+    {
+      return _wordCount;
     }
 
 //  LOOKS THROUGH userSentence FOR userWord RETURNS NUMBER OF TIMES IT IS PRESENT.

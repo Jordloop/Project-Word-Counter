@@ -1,6 +1,19 @@
 @{
   Layout="Shared/_Layout.cshtml";
 }
+@if (@Model.GetWordCount() == 1)
+{
+  <p>
+    @Model.GetUserWord() appears @Model.GetWordCount() time in "@Model.GetUserSentence()".
+  </p>
+
+}
+else
+{
+  <p>
+    @Model.GetUserWord() appears @Model.GetWordCount() times in "@Model.GetUserSentence()".
+  </p>
+}
 
 
-<a href="/">Return Home</a>
+<br><a href="/">Return Home</a>
